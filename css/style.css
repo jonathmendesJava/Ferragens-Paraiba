@@ -1,0 +1,77 @@
+/* Custom styles that complement Tailwind CSS */
+
+/* Smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero section background image */
+#inicio {
+    background-image: url('https://images.pexels.com/photos/1094767/pexels-photo-1094767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Header scrolled state - applied via JavaScript */
+.header-scrolled {
+    background-color: #0f4c81 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Active navigation link */
+.nav-link.active {
+    color: #ff7a2e !important;
+    font-weight: 600;
+}
+
+/* Animation for service cards */
+.service-card {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Form input focus styles */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #0f4c81;
+    box-shadow: 0 0 0 3px rgba(15, 76, 129, 0.2);
+}
+
+/* Custom animation for icons */
+.icon-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Contact form success message */
+.form-success {
+    background-color: #d1fae5;
+    color: #065f46;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Contact form error message */
+.form-error {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
